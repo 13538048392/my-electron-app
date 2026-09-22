@@ -5,7 +5,7 @@
   "license": "ISC",
   "author": "liu wei",
   "type": "commonjs",
-  "main": "main.js",
+  "main": ".webpack/main",
   "scripts": {
     "start": "electron-forge start",
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -13,6 +13,9 @@
     "make": "electron-forge make"
   },
   "devDependencies": {
+    "@babel/core": "^8.0.6",
+    "@babel/preset-env": "^8.0.6",
+    "@babel/preset-react": "^8.0.1",
     "@electron-forge/cli": "^7.11.2",
     "@electron-forge/maker-deb": "^7.11.2",
     "@electron-forge/maker-rpm": "^7.11.2",
@@ -20,10 +23,26 @@
     "@electron-forge/maker-zip": "^7.11.2",
     "@electron-forge/plugin-auto-unpack-natives": "^7.11.2",
     "@electron-forge/plugin-fuses": "^7.11.2",
+    "@electron-forge/plugin-webpack": "^7.11.2",
+    "@electron-forge/template-webpack": "^7.11.2",
     "@electron/fuses": "^1.8.0",
-    "electron": "^44.4.2"
+    "@vercel/webpack-asset-relocator-loader": "^1.11.0",
+    "babel-loader": "^10.1.1",
+    "css-loader": "^7.1.5",
+    "electron": "^44.4.2",
+    "html-webpack-plugin": "^5.6.8",
+    "node-loader": "^2.1.0",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.111.1",
+    "webpack-cli": "^7.2.3",
+    "webpack-dev-server": "^6.0.0"
   },
   "dependencies": {
-    "electron-squirrel-startup": "^1.0.1"
+    "@reduxjs/toolkit": "^2.12.0",
+    "electron-squirrel-startup": "^1.0.1",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "react-redux": "^9.3.0",
+    "react-router-dom": "^7.18.4"
   }
 }
